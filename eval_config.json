@@ -1,0 +1,14 @@
+{   
+    "num_classes": 20,
+    "img_txt": "dataset/test20.txt",
+    "train_model": { 
+        "select" : 0,
+        "model": [
+            "DBUNet"
+        ]
+    },
+    "save_model": {
+        "save": true,
+        "save_path": "saved/DBUNet"
+    }
+}

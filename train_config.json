@@ -1,0 +1,33 @@
+{
+    "device": "0",
+    "use_amp": true,   
+    "num_classes": 20,
+    "batch_size": 8,
+    "num_epoch": 200,
+    "lr": 1e-4,
+    "weight_decay": 1e-4,
+    "momentum": 0.9,
+    "train_list": "dataset/train20.txt",
+    "test_list": "dataset/val20.txt",
+
+
+    "train_model": { 
+        "select" : 0,
+        "model": [
+                "DBUNet"
+        ]
+    },
+    "save_model": {
+        "save": true,
+        "save_path": "saved/DBUNet"
+    },
+    "train_loss":{
+        "select": 0,
+        "loss":["CrossEntropyLoss",
+                "CustomNDVILoss",
+                "CombinedLoss"
+        ]
+    }
+}
+
+
